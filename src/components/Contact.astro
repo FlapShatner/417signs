@@ -1,0 +1,38 @@
+---
+import Map from '../components/Map.astro'
+---
+
+<div class='bg-bg-primary flex items-center w-full justify-between p-12 max-w-[1100px] m-auto'>
+ <div class='flex flex-col gap-8'>
+  <div class='w-max'>
+   <h2 class='text-4xl gap-1 flex items-center'>
+    <span class='material-symbols-outlined'> location_on </span>
+    Address
+   </h2>
+   <p>5601 S. Campbell Suite 106</p>
+   <p>Springfield, MO 65804</p>
+  </div>
+  <div class='w-max'>
+   <h2 class='text-4xl flex gap-1 items-center'>
+    <span class='material-symbols-outlined'> smartphone </span>Phone
+   </h2>
+   <p>(417)830-0433</p>
+  </div>
+ </div>
+ <Map />
+</div>
+<style>
+ .material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;
+  display: flex;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+ }
+</style>

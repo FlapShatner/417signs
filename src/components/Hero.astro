@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets'
+import Button from './Button.astro'
+import carImage from '../components/images/car.png'
+---
+
+<div class='w-full bg-black flex'>
+ <div class='w-full flex flex-col justify-center pl-12'>
+  <h1 class='font-bold text-7xl mb-4'>417 Signs</h1>
+  <p class='text-base mr-12 mb-6'>
+   Transforming your ideas into vibrant visuals is our passion. Our wide range of high-quality products ensures you find exactly what you need to showcase your
+   brand, event, or personal style.
+  </p>
+  <Button label='Contact Us' />
+ </div>
+ <div class='w-full'>
+  <Image
+   src={carImage}
+   alt='Car Image'
+  />
+ </div>
+</div>

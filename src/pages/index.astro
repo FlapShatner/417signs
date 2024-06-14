@@ -1,27 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Contact from '../components/Contact.astro'
+import Footer from '../components/Footer.astro'
 import '@fontsource/material-symbols-outlined'
 ---
 
-<Layout title='Welcome to Astro.'>
- <main>
-  <h1 class='mt-12'>
-   Future home of <br />
-   <span>417 Signs</span>
-  </h1>
-  <div class='w-full flex justify-center'>
-   <span class='material-symbols-outlined'> construction </span>
-  </div>
+<Layout title='417Signs'>
+ <main class='w-full max-w-[1400px] m-auto bg-bg-primary'>
+  <Hero />
+  <Contact />
+  <Footer />
  </main>
 </Layout>
 
 <style>
  main {
   margin: auto;
-  padding: 1rem;
-  width: 800px;
-  max-width: calc(100% - 2rem);
   color: white;
+
   font-size: 20px;
   line-height: 1.6;
  }
